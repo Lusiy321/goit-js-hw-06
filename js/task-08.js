@@ -17,4 +17,5 @@ function getForm(evt) {
   };
   alert(`Email: ${user.email} Password: ${user.password}`);
   evt.currentTarget.reset();
+  console.log(user);
 }

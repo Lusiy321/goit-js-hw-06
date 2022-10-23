@@ -1,8 +1,8 @@
-const slider = document.querySelector("#font-size-control");
+const input = document.querySelector("#font-size-control");
 const spanEl = document.querySelector("#text");
-slider.addEventListener("change", setFontSize);
+input.addEventListener("click", setFontSize);
 
 function setFontSize(evt) {
   evt.preventDefault();
-  spanEl.style.fontSize = `${slider.value}px`;
+  spanEl.style.fontSize = `${input.value}px`;
 }

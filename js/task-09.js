@@ -9,6 +9,7 @@ btn.addEventListener("click", changeColor);
 
 function changeColor(evt) {
   evt.preventDefault();
-  spanEl.textContent = ` - ${getRandomHexColor()}`;
-  body.style.backgroundColor = `${getRandomHexColor()}`;
+  const random = getRandomHexColor();
+  spanEl.textContent = ` - ${random}`;
+  body.style.backgroundColor = `${random}`;
 }
