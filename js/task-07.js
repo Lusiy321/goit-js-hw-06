@@ -1,6 +1,6 @@
 const input = document.querySelector("#font-size-control");
 const spanEl = document.querySelector("#text");
-input.addEventListener("click", setFontSize);
+input.addEventListener("input", setFontSize);
 
 function setFontSize(evt) {
   evt.preventDefault();
